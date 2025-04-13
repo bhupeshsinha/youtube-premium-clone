@@ -420,3 +420,31 @@ hr{
 	background-color: #F5F5F5;;
 }
 
+
+/* 
+
+    Mobile: 320px-480px
+    Tablets: 481-768px
+    Small Screen: 769-1024px
+
+*/
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    
+}
+
+@media screen and (min-width:1201px) {
+    
+}
