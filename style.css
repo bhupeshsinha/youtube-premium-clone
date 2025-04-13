@@ -110,6 +110,8 @@ img:nth-child(2) → Selects the second child element within .centerNav, but onl
 
 .ytdesc > h2{
     /* font-family: Roboto, Arial, sans-serif; */
+    width: 60%;
+    margin: auto;       /*auto: horizontally and vertically elem ko bich me laana*/
     font-weight: 600;
     font-size: 32px;
     text-align: center;
@@ -429,7 +431,7 @@ hr{
 
 */
 
-@media screen and (min-width:320px) and (max-width:480px) {
+@media screen and (max-width:480px) {
     .centerNav {
         display: none;
     }
@@ -438,6 +440,58 @@ hr{
     {
         display: none;
     }
+
+    .ytPremium {
+        height: 75%;
+        margin-top: 100px;
+    }
+
+    .ytPremiumLogo > img
+    {
+        width: 100%;
+    }
+
+    .ytdesc > h2 {
+        /* font-family: Roboto, Arial, sans-serif; */
+        width: 100%;
+    }
+
+    .ytPremiumDetails > button {
+        font-size: 14px;
+        padding: 10px 5px;
+        width: 46%;
+    }
+
+    .ytPremiumDetails p:nth-child(2) {
+        width: 90%;
+        font-size: 23px;
+        font-weight: lighter;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        height: 110%;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .features div:nth-child(1), .features div:nth-child(3) {
+        /* margin-top: 30px; */
+        min-height: 25%;
+        overflow: hidden;
+    }
+
+    .features div:nth-child(1), .features div:nth-child(2), .features div:nth-child(3) {        
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
