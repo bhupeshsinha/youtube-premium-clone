@@ -490,7 +490,39 @@ hr{
         align-items: center;
     }
 
+    .bg1, .bg2, .bg3, .bg4{
+        height: 28%;
+        background-position: center;
+        overflow: hidden;
+    }
 
+    .bg1 > div, .bg2 > div, .bg3 > div, .bg4 > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .bg1 > div> h2, .bg2 > div> h2, .bg3 > div> h2, .bg4 > div> h2 {
+        color: white;
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+
+    .bg1 > div > p, .bg2 > div > p, .bg3 > div > p, .bg4 > div > p {
+        color: rgba(219, 216, 216, 0.678);
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    .bg1 > div, .bg2 > div, .bg3 > div, .bg4 > div {
+        margin-top: 90px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
 }
 
