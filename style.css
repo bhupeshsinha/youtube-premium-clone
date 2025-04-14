@@ -527,7 +527,98 @@ hr{
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
+    .centerNav {
+        display: none;
+    }
     
+    .rightNav > img:nth-child(3)
+    {
+        display: none;
+    }
+
+    .ytPremium {
+        height: 75%;
+        margin-top: 100px;
+    }
+
+    .ytPremiumLogo > img
+    {
+        width: 100%;
+    }
+
+    .ytdesc > h2 {
+        /* font-family: Roboto, Arial, sans-serif; */
+        width: 100%;
+    }
+
+    .ytPremiumDetails > button {
+        font-size: 14px;
+        padding: 10px 5px;
+        width: 46%;
+    }
+
+    .ytPremiumDetails p:nth-child(2) {
+        width: 90%;
+        font-size: 23px;
+        font-weight: lighter;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        height: 110%;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .features div:nth-child(1), .features div:nth-child(3) {
+        /* margin-top: 30px; */
+        min-height: 25%;
+        overflow: hidden;
+    }
+
+    .features div:nth-child(1), .features div:nth-child(2), .features div:nth-child(3) {        
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .bg1, .bg2, .bg3, .bg4{
+        height: 28%;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .bg1 > div, .bg2 > div, .bg3 > div, .bg4 > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .bg1 > div> h2, .bg2 > div> h2, .bg3 > div> h2, .bg4 > div> h2 {
+        color: white;
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+
+    .bg1 > div > p, .bg2 > div > p, .bg3 > div > p, .bg4 > div > p {
+        color: rgba(219, 216, 216, 0.678);
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    .bg1 > div, .bg2 > div, .bg3 > div, .bg4 > div {
+        margin-top: 90px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
