@@ -490,7 +490,7 @@ hr{
         align-items: center;
     }
 
-    .bg1, .bg2, .bg3, .bg4{
+    .bg{
         height: 28%;
         background-position: center;
         overflow: hidden;
@@ -503,13 +503,13 @@ hr{
         padding: 0;
     }
 
-    .bg1 > div> h2, .bg2 > div> h2, .bg3 > div> h2, .bg4 > div> h2 {
+    #heading2 {
         color: white;
         font-size: 1.4em;
         font-weight: 300;
     }
 
-    .bg1 > div > p, .bg2 > div > p, .bg3 > div > p, .bg4 > div > p {
+    #para {
         color: rgba(219, 216, 216, 0.678);
         font-size: 12px;
         line-height: 20px;
@@ -522,6 +522,23 @@ hr{
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .faqs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        height: 81%;
+        color: #d1d3d6;
+        gap: 50px;
+    }
+
+    .helpCenter > p {
+        font-size: 12px;
+        font-weight: 500;
+        padding-right: 0px;
     }
 
 }
