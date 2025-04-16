@@ -636,6 +636,14 @@ hr{
         flex-direction: column;
         gap: 10px;
     }
+
+    .helpCenter > p {
+        margin: auto;
+        width: 70%;
+        font-size: 17px;
+        font-weight: 700;
+        padding-right: 0px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
