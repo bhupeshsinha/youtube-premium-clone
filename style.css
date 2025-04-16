@@ -47,6 +47,14 @@
 }
 
 
+#mic{
+    display: none;
+}
+
+#search{
+    display: none;
+}
+
 /* .centerNav > input:: called child selector */
 .centerNav > input{
     background-color: #000;
@@ -68,7 +76,7 @@
 > (Child combinator) → Ensures that the selected element is a direct child of .centerNav (not deeper nested elements).
 img:nth-child(2) → Selects the second child element within .centerNav, but only if it is an <img> tag.
 { background-color: #222222; } → Sets the background color of that specific image to dark gray (#222222). */
-.centerNav  img:nth-child(2)
+.centerNav  img:nth-child(3)
 {
     padding: 3px 10px;
     background-color: #222222;
@@ -79,7 +87,7 @@ img:nth-child(2) → Selects the second child element within .centerNav, but onl
 }
 
 
-.centerNav img:nth-child(3){
+.centerNav img:nth-child(4){
     margin-left: 10px;
 }
 
@@ -90,7 +98,7 @@ img:nth-child(2) → Selects the second child element within .centerNav, but onl
 }
 
 
-.rightNav > img:nth-child(4) {
+.rightNav > img:nth-child(5) {
     width: 30px;
     border-radius: 50%;
 }
@@ -383,16 +391,23 @@ img:nth-child(2) → Selects the second child element within .centerNav, but onl
     font-weight: 700;
 }
 
+i{
+    width: 100%;
+}
 
 hr{
     opacity: 0.3;
 }
 
+.helpCenter{
+    width: 50%;
+    text-align: center;
+}
 
 .helpCenter > p{
     font-size: 20px;
     font-weight: 800;
-    padding-right: 470px;
+    /* padding-right: 470px; */
 }
 
 
@@ -434,6 +449,14 @@ hr{
 @media screen and (max-width:480px) {
     .centerNav {
         display: none;
+    }
+
+    #mic{
+        display: none;
+    }
+
+    #search{
+        display: flex;
     }
     
     .rightNav > img:nth-child(3)
@@ -535,12 +558,9 @@ hr{
         gap: 50px;
     }
 
-    .helpCenter > p {
-        font-size: 12px;
-        font-weight: 500;
-        padding-right: 0px;
+    i{
+        width: 100%;
     }
-
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -548,6 +568,14 @@ hr{
         display: none;
     }
     
+    #mic{
+        display: block;
+    }
+
+    #search{
+        display: flex;
+    }
+
     .rightNav > img:nth-child(3)
     {
         display: none;
@@ -604,7 +632,7 @@ hr{
 
 
     .bg1, .bg2, .bg3, .bg4{
-        height: 28%;
+        height: 40%;
         background-position: center;
         overflow: hidden;
     }
@@ -630,7 +658,7 @@ hr{
     }
 
     .bg1 > div, .bg2 > div, .bg3 > div, .bg4 > div {
-        margin-top: 90px;
+        margin-top: 190px;
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -643,6 +671,37 @@ hr{
         font-size: 17px;
         font-weight: 700;
         padding-right: 0px;
+    }
+    
+    .faqs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        height: 81%;
+        color: #d1d3d6;
+        gap: 50px;
+    }
+
+    .faqDetail {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    i{
+        width: 100%;
+    }
+
+    .drop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        font-size: 18px;
+        font-weight: 700;
     }
 }
 
